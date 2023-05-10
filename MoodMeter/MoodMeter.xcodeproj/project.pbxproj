@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C56D2F22A0C36590074A790 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D2F12A0C36590074A790 /* EmptyResponse.swift */; };
+		2C56D2F52A0C395B0074A790 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D2F42A0C395B0074A790 /* ValidationError.swift */; };
 		BF537F4B2A0C28CB00D4FF42 /* StressLevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4A2A0C28CB00D4FF42 /* StressLevelScreen.swift */; };
 		BF537F4D2A0C28D500D4FF42 /* StressLevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4C2A0C28D500D4FF42 /* StressLevelViewModel.swift */; };
 		BF537F4F2A0C28EC00D4FF42 /* StressLevelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4E2A0C28EC00D4FF42 /* StressLevelRepository.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C56D2F12A0C36590074A790 /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
+		2C56D2F42A0C395B0074A790 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		BF537F4A2A0C28CB00D4FF42 /* StressLevelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelScreen.swift; sourceTree = "<group>"; };
 		BF537F4C2A0C28D500D4FF42 /* StressLevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelViewModel.swift; sourceTree = "<group>"; };
 		BF537F4E2A0C28EC00D4FF42 /* StressLevelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelRepository.swift; sourceTree = "<group>"; };
@@ -40,6 +44,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C56D2F02A0C363C0074A790 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C56D2F12A0C36590074A790 /* EmptyResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C56D2F32A0C394D0074A790 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				2C56D2F42A0C395B0074A790 /* ValidationError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		BF537F472A0C27B900D4FF42 /* StressLevel */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +134,7 @@
 		BFFAAAB22A0C1F3B004FD7F3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2C56D2F32A0C394D0074A790 /* Errors */,
 				BFFAAAB82A0C1F7B004FD7F3 /* Data */,
 			);
 			path = Core;
@@ -122,6 +143,7 @@
 		BFFAAAB82A0C1F7B004FD7F3 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2C56D2F02A0C363C0074A790 /* Models */,
 				BFFAAABA2A0C1FC7004FD7F3 /* Remote */,
 			);
 			path = Data;
@@ -206,9 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFFAAAA62A0C1D90004FD7F3 /* ContentView.swift in Sources */,
+				2C56D2F22A0C36590074A790 /* EmptyResponse.swift in Sources */,
 				BF537F4F2A0C28EC00D4FF42 /* StressLevelRepository.swift in Sources */,
 				BF537F4D2A0C28D500D4FF42 /* StressLevelViewModel.swift in Sources */,
 				BFFAAAA42A0C1D90004FD7F3 /* MoodMeterApp.swift in Sources */,
+				2C56D2F52A0C395B0074A790 /* ValidationError.swift in Sources */,
 				BF537F4B2A0C28CB00D4FF42 /* StressLevelScreen.swift in Sources */,
 				BFFAAABC2A0C1FE1004FD7F3 /* MoodApi.swift in Sources */,
 			);
