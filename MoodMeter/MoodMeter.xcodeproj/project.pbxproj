@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C56D2F22A0C36590074A790 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D2F12A0C36590074A790 /* EmptyResponse.swift */; };
 		2C56D2F52A0C395B0074A790 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D2F42A0C395B0074A790 /* ValidationError.swift */; };
+		2C56D2FB2A0C3D410074A790 /* HappinesLevelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D2FA2A0C3D410074A790 /* HappinesLevelRepository.swift */; };
 		BF537F4B2A0C28CB00D4FF42 /* StressLevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4A2A0C28CB00D4FF42 /* StressLevelScreen.swift */; };
 		BF537F4D2A0C28D500D4FF42 /* StressLevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4C2A0C28D500D4FF42 /* StressLevelViewModel.swift */; };
 		BF537F4F2A0C28EC00D4FF42 /* StressLevelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4E2A0C28EC00D4FF42 /* StressLevelRepository.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		2C56D2F12A0C36590074A790 /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
 		2C56D2F42A0C395B0074A790 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		2C56D2FA2A0C3D410074A790 /* HappinesLevelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinesLevelRepository.swift; sourceTree = "<group>"; };
 		BF537F4A2A0C28CB00D4FF42 /* StressLevelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelScreen.swift; sourceTree = "<group>"; };
 		BF537F4C2A0C28D500D4FF42 /* StressLevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelViewModel.swift; sourceTree = "<group>"; };
 		BF537F4E2A0C28EC00D4FF42 /* StressLevelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelRepository.swift; sourceTree = "<group>"; };
@@ -58,6 +60,22 @@
 				2C56D2F42A0C395B0074A790 /* ValidationError.swift */,
 			);
 			path = Errors;
+			sourceTree = "<group>";
+		};
+		2C56D2F62A0C3CD80074A790 /* HappinesLevel */ = {
+			isa = PBXGroup;
+			children = (
+				2C56D2F72A0C3CEB0074A790 /* Data */,
+			);
+			path = HappinesLevel;
+			sourceTree = "<group>";
+		};
+		2C56D2F72A0C3CEB0074A790 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2C56D2FA2A0C3D410074A790 /* HappinesLevelRepository.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		BF537F472A0C27B900D4FF42 /* StressLevel */ = {
@@ -126,6 +144,7 @@
 		BFFAAAB12A0C1F22004FD7F3 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				2C56D2F62A0C3CD80074A790 /* HappinesLevel */,
 				BF537F472A0C27B900D4FF42 /* StressLevel */,
 			);
 			path = Features;
@@ -232,6 +251,7 @@
 				BF537F4F2A0C28EC00D4FF42 /* StressLevelRepository.swift in Sources */,
 				BF537F4D2A0C28D500D4FF42 /* StressLevelViewModel.swift in Sources */,
 				BFFAAAA42A0C1D90004FD7F3 /* MoodMeterApp.swift in Sources */,
+				2C56D2FB2A0C3D410074A790 /* HappinesLevelRepository.swift in Sources */,
 				2C56D2F52A0C395B0074A790 /* ValidationError.swift in Sources */,
 				BF537F4B2A0C28CB00D4FF42 /* StressLevelScreen.swift in Sources */,
 				BFFAAABC2A0C1FE1004FD7F3 /* MoodApi.swift in Sources */,

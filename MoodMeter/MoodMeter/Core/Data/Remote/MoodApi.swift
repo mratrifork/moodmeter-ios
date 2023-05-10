@@ -14,7 +14,7 @@ class MoodApi {
         return Result.success(EmptyResponse())
     }
     
-    func PostHapinessLevel(stressLevel: Int) -> Result<EmptyResponse, Error> {
+    func PostHapinessLevel(happinesLevel: Int) -> Result<EmptyResponse, Error> {
         // TODO Send to Frederiks Api
         return Result.success(EmptyResponse())
     }
