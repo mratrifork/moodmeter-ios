@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF537F4B2A0C28CB00D4FF42 /* StressLevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4A2A0C28CB00D4FF42 /* StressLevelScreen.swift */; };
+		BF537F4D2A0C28D500D4FF42 /* StressLevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4C2A0C28D500D4FF42 /* StressLevelViewModel.swift */; };
+		BF537F4F2A0C28EC00D4FF42 /* StressLevelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4E2A0C28EC00D4FF42 /* StressLevelRepository.swift */; };
 		BFFAAAA42A0C1D90004FD7F3 /* MoodMeterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFAAAA32A0C1D90004FD7F3 /* MoodMeterApp.swift */; };
 		BFFAAAA62A0C1D90004FD7F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFAAAA52A0C1D90004FD7F3 /* ContentView.swift */; };
 		BFFAAAA82A0C1D95004FD7F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFAAAA72A0C1D95004FD7F3 /* Assets.xcassets */; };
 		BFFAAAAB2A0C1D95004FD7F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFAAAAA2A0C1D95004FD7F3 /* Preview Assets.xcassets */; };
+		BFFAAABC2A0C1FE1004FD7F3 /* MoodApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFAAABB2A0C1FE1004FD7F3 /* MoodApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF537F4A2A0C28CB00D4FF42 /* StressLevelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelScreen.swift; sourceTree = "<group>"; };
+		BF537F4C2A0C28D500D4FF42 /* StressLevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelViewModel.swift; sourceTree = "<group>"; };
+		BF537F4E2A0C28EC00D4FF42 /* StressLevelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelRepository.swift; sourceTree = "<group>"; };
 		BFFAAAA02A0C1D90004FD7F3 /* MoodMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFAAAA32A0C1D90004FD7F3 /* MoodMeterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMeterApp.swift; sourceTree = "<group>"; };
 		BFFAAAA52A0C1D90004FD7F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BFFAAAA72A0C1D95004FD7F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFFAAAAA2A0C1D95004FD7F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFFAAABB2A0C1FE1004FD7F3 /* MoodApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +40,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF537F472A0C27B900D4FF42 /* StressLevel */ = {
+			isa = PBXGroup;
+			children = (
+				BF537F492A0C28BE00D4FF42 /* Data */,
+				BF537F482A0C27C400D4FF42 /* Presentation */,
+			);
+			path = StressLevel;
+			sourceTree = "<group>";
+		};
+		BF537F482A0C27C400D4FF42 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BF537F4A2A0C28CB00D4FF42 /* StressLevelScreen.swift */,
+				BF537F4C2A0C28D500D4FF42 /* StressLevelViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BF537F492A0C28BE00D4FF42 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BF537F4E2A0C28EC00D4FF42 /* StressLevelRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		BFFAAA972A0C1D90004FD7F3 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +85,8 @@
 		BFFAAAA22A0C1D90004FD7F3 /* MoodMeter */ = {
 			isa = PBXGroup;
 			children = (
+				BFFAAAB22A0C1F3B004FD7F3 /* Core */,
+				BFFAAAB12A0C1F22004FD7F3 /* Features */,
 				BFFAAAA32A0C1D90004FD7F3 /* MoodMeterApp.swift */,
 				BFFAAAA52A0C1D90004FD7F3 /* ContentView.swift */,
 				BFFAAAA72A0C1D95004FD7F3 /* Assets.xcassets */,
@@ -65,6 +101,38 @@
 				BFFAAAAA2A0C1D95004FD7F3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFFAAAB12A0C1F22004FD7F3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				BF537F472A0C27B900D4FF42 /* StressLevel */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		BFFAAAB22A0C1F3B004FD7F3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BFFAAAB82A0C1F7B004FD7F3 /* Data */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BFFAAAB82A0C1F7B004FD7F3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BFFAAABA2A0C1FC7004FD7F3 /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BFFAAABA2A0C1FC7004FD7F3 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				BFFAAABB2A0C1FE1004FD7F3 /* MoodApi.swift */,
+			);
+			path = Remote;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +206,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFFAAAA62A0C1D90004FD7F3 /* ContentView.swift in Sources */,
+				BF537F4F2A0C28EC00D4FF42 /* StressLevelRepository.swift in Sources */,
+				BF537F4D2A0C28D500D4FF42 /* StressLevelViewModel.swift in Sources */,
 				BFFAAAA42A0C1D90004FD7F3 /* MoodMeterApp.swift in Sources */,
+				BF537F4B2A0C28CB00D4FF42 /* StressLevelScreen.swift in Sources */,
+				BFFAAABC2A0C1FE1004FD7F3 /* MoodApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
