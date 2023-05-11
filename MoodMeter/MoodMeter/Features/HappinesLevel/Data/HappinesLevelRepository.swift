@@ -7,14 +7,14 @@
 
 import Foundation
 
-class HappinesLevelRepository {
+class HappinessLevelRepository {
     let moodApi = MoodApi()
     
-    func CommitHapinessLevel(happinesLevel: Int) -> Result<EmptyResponse, Error>{
-        guard (1...5).contains(happinesLevel) else {
-            return Result.failure(ValidationError.Default(errorMessage: "Invalid happines level. Level should be from 1 to 5"))
+    func CommitHapinessLevel(happinessLevel: Int) -> Result<EmptyResponse, Error>{
+        guard (1...5).contains(happinessLevel) else {
+            return Result.failure(ValidationError.Default(errorMessage: "Invalid happiness level. Level should be from 1 to 5"))
         }
         
-        return moodApi.PostHapinessLevel(happinesLevel: happinesLevel)
+        return moodApi.PostHapinessLevel(happinessLevel: happinessLevel)
     }
 }
