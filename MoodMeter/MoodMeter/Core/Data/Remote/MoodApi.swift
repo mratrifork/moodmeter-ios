@@ -13,7 +13,7 @@ class MoodApi {
     let url = URL(string:"https://app-mood-meter.azurewebsites.net/api/vote")!
     
     func PostStressLevel(stressLevel: Int) -> AnyPublisher<EmptyResponse, Error> {
-        let body = "\(stressLevel)"
+        let body = "{\"value\": \(stressLevel)}"
         let finalBody = body.data(using: .utf8)
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
