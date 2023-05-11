@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import Combine
 
 protocol StressLevelRepository{
-    
+    func CommitStressLevel(stressLevel: Int) -> AnyPublisher<EmptyResponse, Error>
 }

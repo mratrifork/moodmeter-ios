@@ -8,14 +8,14 @@
 import Foundation
 import Combine
 
-class HappinessLevelRepository {
+class DefaultHappinessLevelRepository : HappinessLevelRepository{
     let moodApi = MoodApi()
     
-    func CommitHapinessLevel(happinessLevel: Int) -> any Publisher<EmptyResponse, Error>{
+    func CommitHapinessLevel(happinessLevel: Int) -> AnyPublisher<EmptyResponse, Error>{
         guard (1...5).contains(happinessLevel) else {
             return Fail(error: ValidationError.Default(errorMessage: "Invalid happiness level. Level should be from 1 to 5")).eraseToAnyPublisher()
         }
         
-        return moodApi.PostHapinessLevel(happinessLevel: happinessLevel).publisher
+        return moodApi.PostHapinessLevel(happinessLevel: happinessLevel)
     }
 }
