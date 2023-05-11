@@ -9,5 +9,5 @@ import Foundation
 import Combine
 
 protocol HappinessLevelRepository {
-    func commitHapinessLevel(happinessLevel: Int) -> AnyPublisher<EmptyResponse, Error>
+    func submit(happinessLevel: Int) -> AnyPublisher<EmptyResponse, Error>
 }

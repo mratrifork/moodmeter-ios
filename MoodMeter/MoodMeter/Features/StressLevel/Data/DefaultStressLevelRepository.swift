@@ -17,6 +17,6 @@ class DefaultStressLevelRepository : StressLevelRepository, ObservableObject {
             return Fail(error: ValidationError.invalidRange(message: "Invalid stress level. Level should be from 1 to 5")).eraseToAnyPublisher()
         }
         
-        return moodApi.postStressLevel(stressLevel: stressLevel)
+        return moodApi.post(stressLevel: stressLevel)
     }
 }
