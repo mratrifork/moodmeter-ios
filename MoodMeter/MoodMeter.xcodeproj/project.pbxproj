@@ -17,6 +17,12 @@
 		BF537F4B2A0C28CB00D4FF42 /* StressLevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4A2A0C28CB00D4FF42 /* StressLevelScreen.swift */; };
 		BF537F4D2A0C28D500D4FF42 /* StressLevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4C2A0C28D500D4FF42 /* StressLevelViewModel.swift */; };
 		BF537F4F2A0C28EC00D4FF42 /* DefaultStressLevelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4E2A0C28EC00D4FF42 /* DefaultStressLevelRepository.swift */; };
+		BF537F512A0C3EC300D4FF42 /* StressLevelUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F502A0C3EC300D4FF42 /* StressLevelUiState.swift */; };
+		BF537F552A0CABA000D4FF42 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F542A0CABA000D4FF42 /* HomeScreen.swift */; };
+		BF537F5A2A0CB4D800D4FF42 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F592A0CB4D800D4FF42 /* RoundedButton.swift */; };
+		BF537F5D2A0CC5CE00D4FF42 /* MoodColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F5C2A0CC5CE00D4FF42 /* MoodColors.swift */; };
+		BF537F5F2A0CDADA00D4FF42 /* AppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F5E2A0CDADA00D4FF42 /* AppBar.swift */; };
+		BF537F612A0CEB0A00D4FF42 /* DigitButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F602A0CEB0A00D4FF42 /* DigitButtonStyle.swift */; };
 		BFFAAAA42A0C1D90004FD7F3 /* MoodMeterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFAAAA32A0C1D90004FD7F3 /* MoodMeterApp.swift */; };
 		BFFAAAA62A0C1D90004FD7F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFAAAA52A0C1D90004FD7F3 /* ContentView.swift */; };
 		BFFAAAA82A0C1D95004FD7F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFAAAA72A0C1D95004FD7F3 /* Assets.xcassets */; };
@@ -35,6 +41,12 @@
 		BF537F4A2A0C28CB00D4FF42 /* StressLevelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelScreen.swift; sourceTree = "<group>"; };
 		BF537F4C2A0C28D500D4FF42 /* StressLevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelViewModel.swift; sourceTree = "<group>"; };
 		BF537F4E2A0C28EC00D4FF42 /* DefaultStressLevelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStressLevelRepository.swift; sourceTree = "<group>"; };
+		BF537F502A0C3EC300D4FF42 /* StressLevelUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelUiState.swift; sourceTree = "<group>"; };
+		BF537F542A0CABA000D4FF42 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		BF537F592A0CB4D800D4FF42 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		BF537F5C2A0CC5CE00D4FF42 /* MoodColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodColors.swift; sourceTree = "<group>"; };
+		BF537F5E2A0CDADA00D4FF42 /* AppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBar.swift; sourceTree = "<group>"; };
+		BF537F602A0CEB0A00D4FF42 /* DigitButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitButtonStyle.swift; sourceTree = "<group>"; };
 		BFFAAAA02A0C1D90004FD7F3 /* MoodMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFAAAA32A0C1D90004FD7F3 /* MoodMeterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMeterApp.swift; sourceTree = "<group>"; };
 		BFFAAAA52A0C1D90004FD7F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,6 +147,7 @@
 			children = (
 				BF537F4A2A0C28CB00D4FF42 /* StressLevelScreen.swift */,
 				BF537F4C2A0C28D500D4FF42 /* StressLevelViewModel.swift */,
+				BF537F502A0C3EC300D4FF42 /* StressLevelUiState.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -146,6 +159,57 @@
 				2C56D3022A0D01CA0074A790 /* FakeStressLevelRepository.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		BF537F522A0CAB8500D4FF42 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BF537F532A0CAB8C00D4FF42 /* Presentation */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BF537F532A0CAB8C00D4FF42 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BF537F542A0CABA000D4FF42 /* HomeScreen.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BF537F562A0CB2DD00D4FF42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFFAAAA72A0C1D95004FD7F3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF537F572A0CB4C300D4FF42 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				BF537F5B2A0CC37900D4FF42 /* Colors */,
+				BF537F582A0CB4CB00D4FF42 /* Views */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		BF537F582A0CB4CB00D4FF42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF537F592A0CB4D800D4FF42 /* RoundedButton.swift */,
+				BF537F5E2A0CDADA00D4FF42 /* AppBar.swift */,
+				BF537F602A0CEB0A00D4FF42 /* DigitButtonStyle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF537F5B2A0CC37900D4FF42 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				BF537F5C2A0CC5CE00D4FF42 /* MoodColors.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 		BFFAAA972A0C1D90004FD7F3 = {
@@ -167,11 +231,11 @@
 		BFFAAAA22A0C1D90004FD7F3 /* MoodMeter */ = {
 			isa = PBXGroup;
 			children = (
+				BF537F562A0CB2DD00D4FF42 /* Resources */,
 				BFFAAAB22A0C1F3B004FD7F3 /* Core */,
 				BFFAAAB12A0C1F22004FD7F3 /* Features */,
 				BFFAAAA32A0C1D90004FD7F3 /* MoodMeterApp.swift */,
 				BFFAAAA52A0C1D90004FD7F3 /* ContentView.swift */,
-				BFFAAAA72A0C1D95004FD7F3 /* Assets.xcassets */,
 				BFFAAAA92A0C1D95004FD7F3 /* Preview Content */,
 			);
 			path = MoodMeter;
@@ -189,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				2C56D2F62A0C3CD80074A790 /* HappinesLevel */,
+				BF537F522A0CAB8500D4FF42 /* Home */,
 				BF537F472A0C27B900D4FF42 /* StressLevel */,
 			);
 			path = Features;
@@ -198,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				2C56D2F32A0C394D0074A790 /* Errors */,
+				BF537F572A0CB4C300D4FF42 /* Presentation */,
 				BFFAAAB82A0C1F7B004FD7F3 /* Data */,
 			);
 			path = Core;
@@ -290,12 +356,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF537F5D2A0CC5CE00D4FF42 /* MoodColors.swift in Sources */,
+				BF537F5F2A0CDADA00D4FF42 /* AppBar.swift in Sources */,
 				BFFAAAA62A0C1D90004FD7F3 /* ContentView.swift in Sources */,
 				2C56D3032A0D01CA0074A790 /* FakeStressLevelRepository.swift in Sources */,
 				2C56D2F22A0C36590074A790 /* EmptyResponse.swift in Sources */,
 				BF537F4F2A0C28EC00D4FF42 /* DefaultStressLevelRepository.swift in Sources */,
 				2C56D3072A0D06BE0074A790 /* HappinessLevelRepository.swift in Sources */,
+				BF537F612A0CEB0A00D4FF42 /* DigitButtonStyle.swift in Sources */,
+				BF537F512A0C3EC300D4FF42 /* StressLevelUiState.swift in Sources */,
 				BF537F4D2A0C28D500D4FF42 /* StressLevelViewModel.swift in Sources */,
+				BF537F5A2A0CB4D800D4FF42 /* RoundedButton.swift in Sources */,
+				BF537F552A0CABA000D4FF42 /* HomeScreen.swift in Sources */,
 				BFFAAAA42A0C1D90004FD7F3 /* MoodMeterApp.swift in Sources */,
 				2C56D2FB2A0C3D410074A790 /* DefaultHappinesLevelRepository.swift in Sources */,
 				2C56D2F52A0C395B0074A790 /* ValidationError.swift in Sources */,
@@ -359,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -413,7 +485,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -428,9 +500,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodMeter/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9KPQV995W2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +520,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.trifork.MoodMeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Trifork iOS Wildcard Development";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,9 +533,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MoodMeter/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9KPQV995W2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -473,6 +553,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.trifork.MoodMeter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Trifork iOS Wildcard Development";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

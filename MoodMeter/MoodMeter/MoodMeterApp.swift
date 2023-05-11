@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MoodMeterApp: App {
+    @StateObject var stressLevelRepository: DefaultStressLevelRepository = DefaultStressLevelRepository()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreen()
+                .environmentObject(stressLevelRepository)
         }
     }
 }

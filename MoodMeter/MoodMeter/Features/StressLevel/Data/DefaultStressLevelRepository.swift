@@ -9,7 +9,7 @@
 import Foundation
 import Combine
 
-class DefaultStressLevelRepository : StressLevelRepository {
+class DefaultStressLevelRepository : StressLevelRepository, ObservableObject {
     let moodApi = MoodApi()
     
     func commitStressLevel(stressLevel: Int) -> AnyPublisher<EmptyResponse, Error>{
