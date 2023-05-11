@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class FakeStressLevelRepository : StressLevelRepository {
-    func commitStressLevel(stressLevel: Int) -> AnyPublisher<EmptyResponse, Error>{
+    func submit(stressLevel: Int) -> AnyPublisher<EmptyResponse, Error>{
         guard (1...5).contains(stressLevel) else {
             return Fail(error: ValidationError.invalidRange(message: "Invalid stress level. Level should be from 1 to 5")).eraseToAnyPublisher()
         }

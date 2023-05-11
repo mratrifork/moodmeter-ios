@@ -14,7 +14,7 @@ class StressLevelViewModel: ObservableObject {
     private func set(stressLevel: Int) {
         uiState = uiState.copy(loading: true)
         repository
-            .commitStressLevel(stressLevel: stressLevel)
+            .submit(stressLevel: stressLevel)
             .eraseToAnyPublisher()
             .receive(on: DispatchQueue.main)
             .sink { [weak self] _ in
