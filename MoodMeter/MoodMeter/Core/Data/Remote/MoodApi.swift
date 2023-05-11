@@ -12,7 +12,7 @@ import Combine
 class MoodApi {
     let url = URL(string:"https://app-mood-meter.azurewebsites.net/api/vote")!
     
-    func PostStressLevel(stressLevel: Int) -> AnyPublisher<EmptyResponse, Error> {
+    func postStressLevel(stressLevel: Int) -> AnyPublisher<EmptyResponse, Error> {
         let body = "{\"value\": \(stressLevel)}"
         let finalBody = body.data(using: .utf8)
         var request = URLRequest(url: url)
@@ -25,7 +25,7 @@ class MoodApi {
             }.eraseToAnyPublisher()
     }
     
-    func PostHapinessLevel(happinessLevel: Int) -> AnyPublisher<EmptyResponse, Error> {
+    func postHapinessLevel(happinessLevel: Int) -> AnyPublisher<EmptyResponse, Error> {
         let body = "{\"value\": \(happinessLevel)}"
         let finalBody = body.data(using: .utf8)
         var request = URLRequest(url: url)

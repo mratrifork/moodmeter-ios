@@ -9,9 +9,9 @@ import Foundation
 import Combine
 
 class FakeHapinessLevelRepository : HappinessLevelRepository {
-    func CommitHapinessLevel(happinessLevel: Int) -> AnyPublisher<EmptyResponse, Error>{
+    func commitHapinessLevel(happinessLevel: Int) -> AnyPublisher<EmptyResponse, Error>{
         guard (1...5).contains(happinessLevel) else {
-            return Fail(error: ValidationError.Default(errorMessage: "Invalid happiness level. Level should be from 1 to 5")).eraseToAnyPublisher()
+            return Fail(error: ValidationError.invalidRange(message: "Invalid happiness level. Level should be from 1 to 5")).eraseToAnyPublisher()
         }
         
         return Just(EmptyResponse())

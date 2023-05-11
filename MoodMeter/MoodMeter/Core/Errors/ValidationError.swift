@@ -8,5 +8,5 @@
 import Foundation
 
 enum ValidationError: Error{
-    case Default(errorMessage: String)
+    case invalidRange(message: String)
 }
