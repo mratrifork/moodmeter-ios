@@ -8,6 +8,9 @@ struct AppBar: ViewModifier {
     func body(content: Content) -> some View {
         ZStack {
             content
+            if(isBackAvailable){
+                Image("ic-back").position(x:48, y:-22)
+            }
         }
         .navigationTitle(title)
         .navigationBarTitleDisplayMode(.inline)
@@ -16,7 +19,7 @@ struct AppBar: ViewModifier {
             view.navigationBarItems(leading: Button(action: {
                 self.mode.wrappedValue.dismiss()
             }) {
-                Image("ic-back")
+                Image("ic-back").opacity(0)
             })
         }
     }
