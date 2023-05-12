@@ -12,6 +12,7 @@ class StressLevelViewModel: ObservableObject {
     }
 
     private func set(stressLevel: Int) {
+        guard !uiState.loading && !uiState.voted else { return }
         uiState = uiState.copy(loading: true)
         repository
             .submit(stressLevel: stressLevel)
@@ -19,7 +20,7 @@ class StressLevelViewModel: ObservableObject {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] _ in
                 guard let self = self else { return }
-                self.uiState = self.uiState.copy(loading: false)
+                self.uiState = self.uiState.copy(loading: false, voted: true)
             } receiveValue: {_ in }
             .store(in: &disposables)
     }

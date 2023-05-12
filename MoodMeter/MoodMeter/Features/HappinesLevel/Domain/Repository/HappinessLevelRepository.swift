@@ -8,6 +8,6 @@
 import Foundation
 import Combine
 
-protocol HappinessLevelRepository {
+protocol HappinessLevelRepository: ObservableObject {
     func submit(happinessLevel: Int) -> AnyPublisher<EmptyResponse, Error>
 }

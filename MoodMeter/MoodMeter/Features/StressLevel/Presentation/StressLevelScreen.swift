@@ -1,10 +1,10 @@
 import SwiftUI
 
 struct StressLevelScreen: View {
-    @EnvironmentObject private var repository: DefaultStressLevelRepository
+    @EnvironmentObject private var viewModel: StressLevelViewModel
 
     var body: some View {
-        StressLevelContent(viewModel: StressLevelViewModel(repository: repository))
+        StressLevelContent(viewModel: viewModel)
     }
 }
 
@@ -16,40 +16,36 @@ struct StressLevelContent: View {
     }
 
     var body: some View {
-        NavigationView {
-            ZStack {
-                Color.darkerPurple.edgesIgnoringSafeArea(.all)
-                VStack {
-                    Spacer()
-                    HStack(spacing: 10) {
-                        ForEach(1...5, id: \.self) { level in
-                            Digit(digit: level) {
-                                viewModel.handleEvent(event: .submit(level: level))
-                            }
+        ZStack {
+            Color.darkerPurple.edgesIgnoringSafeArea(.all)
+            VStack {
+                Spacer()
+                QuestionHeader(text: "How stressed are you?")
+                    .padding(Edge.Set.top, CGFloat(integerLiteral: 10))
+                Text("1 is very stressed, 5 is not stressed.")
+                    .foregroundColor(Color.white)
+                Spacer()
+                Spacer()
+                HStack(spacing: 10) {
+                    ForEach(1...5, id: \.self) { level in
+                        Digit(digit: level) {
+                            viewModel.handleEvent(event: .submit(level: level))
                         }
-                    }.padding()
+                    }
+                }.padding()
+
+                if(viewModel.uiState.voted){
+                    NavigationLink("Next"){
+                        HappinessLevelScreen()
+                    }
                 }
             }
         }.appBar(isBackAvailable: true)
     }
 }
 
-struct Digit: View {
-    let digit: Int
-    let action: () -> Void
-
-    var body: some View {
-        Button {
-            action()
-        } label: {
-            Text("\(digit)")
-        }.buttonStyle(DigitButtonStyle())
-    }
-}
-
-
 struct StressLevelScreen_Previews: PreviewProvider {
     static var previews: some View {
-        StressLevelScreen().environmentObject(FakeStressLevelRepository())
+        StressLevelScreen().environmentObject(StressLevelViewModel(repository:FakeStressLevelRepository()))
     }
 }

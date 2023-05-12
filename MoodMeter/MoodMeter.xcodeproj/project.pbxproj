@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C38A0A12A0D437000B7E61E /* HappinessLevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C38A0A02A0D437000B7E61E /* HappinessLevelScreen.swift */; };
+		2C38A0A32A0D438700B7E61E /* HappinessLevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C38A0A22A0D438700B7E61E /* HappinessLevelViewModel.swift */; };
+		2C38A0A52A0D43AB00B7E61E /* HappinessLevelUiState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C38A0A42A0D43AB00B7E61E /* HappinessLevelUiState.swift */; };
+		2C38A0A82A0D45D400B7E61E /* DigitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C38A0A72A0D45D400B7E61E /* DigitButton.swift */; };
 		2C56D2F22A0C36590074A790 /* EmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D2F12A0C36590074A790 /* EmptyResponse.swift */; };
 		2C56D2F52A0C395B0074A790 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D2F42A0C395B0074A790 /* ValidationError.swift */; };
 		2C56D2FB2A0C3D410074A790 /* DefaultHappinesLevelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D2FA2A0C3D410074A790 /* DefaultHappinesLevelRepository.swift */; };
@@ -14,6 +18,7 @@
 		2C56D3032A0D01CA0074A790 /* FakeStressLevelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D3022A0D01CA0074A790 /* FakeStressLevelRepository.swift */; };
 		2C56D3072A0D06BE0074A790 /* HappinessLevelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D3062A0D06BE0074A790 /* HappinessLevelRepository.swift */; };
 		2C56D3092A0D095F0074A790 /* FakeHappinessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56D3082A0D095F0074A790 /* FakeHappinessRepository.swift */; };
+		2C8490982A0E2383008C8938 /* QuestionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8490972A0E2383008C8938 /* QuestionHeader.swift */; };
 		BF537F4B2A0C28CB00D4FF42 /* StressLevelScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4A2A0C28CB00D4FF42 /* StressLevelScreen.swift */; };
 		BF537F4D2A0C28D500D4FF42 /* StressLevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4C2A0C28D500D4FF42 /* StressLevelViewModel.swift */; };
 		BF537F4F2A0C28EC00D4FF42 /* DefaultStressLevelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF537F4E2A0C28EC00D4FF42 /* DefaultStressLevelRepository.swift */; };
@@ -31,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C38A0A02A0D437000B7E61E /* HappinessLevelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessLevelScreen.swift; sourceTree = "<group>"; };
+		2C38A0A22A0D438700B7E61E /* HappinessLevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessLevelViewModel.swift; sourceTree = "<group>"; };
+		2C38A0A42A0D43AB00B7E61E /* HappinessLevelUiState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessLevelUiState.swift; sourceTree = "<group>"; };
+		2C38A0A72A0D45D400B7E61E /* DigitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitButton.swift; sourceTree = "<group>"; };
 		2C56D2F12A0C36590074A790 /* EmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyResponse.swift; sourceTree = "<group>"; };
 		2C56D2F42A0C395B0074A790 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		2C56D2FA2A0C3D410074A790 /* DefaultHappinesLevelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHappinesLevelRepository.swift; sourceTree = "<group>"; };
@@ -38,6 +47,7 @@
 		2C56D3022A0D01CA0074A790 /* FakeStressLevelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeStressLevelRepository.swift; sourceTree = "<group>"; };
 		2C56D3062A0D06BE0074A790 /* HappinessLevelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessLevelRepository.swift; sourceTree = "<group>"; };
 		2C56D3082A0D095F0074A790 /* FakeHappinessRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeHappinessRepository.swift; sourceTree = "<group>"; };
+		2C8490972A0E2383008C8938 /* QuestionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionHeader.swift; sourceTree = "<group>"; };
 		BF537F4A2A0C28CB00D4FF42 /* StressLevelScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelScreen.swift; sourceTree = "<group>"; };
 		BF537F4C2A0C28D500D4FF42 /* StressLevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLevelViewModel.swift; sourceTree = "<group>"; };
 		BF537F4E2A0C28EC00D4FF42 /* DefaultStressLevelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStressLevelRepository.swift; sourceTree = "<group>"; };
@@ -66,6 +76,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C38A09F2A0D433C00B7E61E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2C38A0A02A0D437000B7E61E /* HappinessLevelScreen.swift */,
+				2C38A0A22A0D438700B7E61E /* HappinessLevelViewModel.swift */,
+				2C38A0A42A0D43AB00B7E61E /* HappinessLevelUiState.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		2C56D2F02A0C363C0074A790 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +105,7 @@
 		2C56D2F62A0C3CD80074A790 /* HappinesLevel */ = {
 			isa = PBXGroup;
 			children = (
+				2C38A09F2A0D433C00B7E61E /* Presentation */,
 				2C56D3042A0D06A10074A790 /* Domain */,
 				2C56D2F72A0C3CEB0074A790 /* Data */,
 			);
@@ -200,6 +221,8 @@
 				BF537F592A0CB4D800D4FF42 /* RoundedButton.swift */,
 				BF537F5E2A0CDADA00D4FF42 /* AppBar.swift */,
 				BF537F602A0CEB0A00D4FF42 /* DigitButtonStyle.swift */,
+				2C38A0A72A0D45D400B7E61E /* DigitButton.swift */,
+				2C8490972A0E2383008C8938 /* QuestionHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -357,12 +380,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF537F5D2A0CC5CE00D4FF42 /* MoodColors.swift in Sources */,
+				2C38A0A82A0D45D400B7E61E /* DigitButton.swift in Sources */,
 				BF537F5F2A0CDADA00D4FF42 /* AppBar.swift in Sources */,
 				BFFAAAA62A0C1D90004FD7F3 /* ContentView.swift in Sources */,
 				2C56D3032A0D01CA0074A790 /* FakeStressLevelRepository.swift in Sources */,
 				2C56D2F22A0C36590074A790 /* EmptyResponse.swift in Sources */,
 				BF537F4F2A0C28EC00D4FF42 /* DefaultStressLevelRepository.swift in Sources */,
 				2C56D3072A0D06BE0074A790 /* HappinessLevelRepository.swift in Sources */,
+				2C8490982A0E2383008C8938 /* QuestionHeader.swift in Sources */,
 				BF537F612A0CEB0A00D4FF42 /* DigitButtonStyle.swift in Sources */,
 				BF537F512A0C3EC300D4FF42 /* StressLevelUiState.swift in Sources */,
 				BF537F4D2A0C28D500D4FF42 /* StressLevelViewModel.swift in Sources */,
@@ -370,8 +395,11 @@
 				BF537F552A0CABA000D4FF42 /* HomeScreen.swift in Sources */,
 				BFFAAAA42A0C1D90004FD7F3 /* MoodMeterApp.swift in Sources */,
 				2C56D2FB2A0C3D410074A790 /* DefaultHappinesLevelRepository.swift in Sources */,
+				2C38A0A52A0D43AB00B7E61E /* HappinessLevelUiState.swift in Sources */,
 				2C56D2F52A0C395B0074A790 /* ValidationError.swift in Sources */,
+				2C38A0A32A0D438700B7E61E /* HappinessLevelViewModel.swift in Sources */,
 				BF537F4B2A0C28CB00D4FF42 /* StressLevelScreen.swift in Sources */,
+				2C38A0A12A0D437000B7E61E /* HappinessLevelScreen.swift in Sources */,
 				2C56D3012A0D01550074A790 /* StressLevelRepository.swift in Sources */,
 				2C56D3092A0D095F0074A790 /* FakeHappinessRepository.swift in Sources */,
 				BFFAAABC2A0C1FE1004FD7F3 /* MoodApi.swift in Sources */,

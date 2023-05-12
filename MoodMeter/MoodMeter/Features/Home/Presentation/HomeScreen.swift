@@ -20,6 +20,8 @@ struct HomeScreen: View {
 
 struct HomeScreen_Preview: PreviewProvider {
     static var previews: some View {
-        HomeScreen().environmentObject(DefaultStressLevelRepository())
+        HomeScreen()
+            .environmentObject(StressLevelViewModel(repository: FakeStressLevelRepository()))
+            .environmentObject(HappinessLevelViewModel(repository: FakeHappinessLevelRepository()))
     }
 }
